@@ -22,7 +22,7 @@ const App = () => {
         { path: "", element: <Home /> },
         { path: "exchange", element: <Exchanges /> },
         { path: "cryptocurrency", element: <Cryptocurrencies /> },
-        { path: "crypto/:coinID", element: <CryptoDetail /> },
+        { path: "crypto/:coinId", element: <CryptoDetail /> },
         { path: "news", element: <News /> },
       ],
     },

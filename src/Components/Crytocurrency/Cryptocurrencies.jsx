@@ -21,6 +21,7 @@ const Cryptocurrencies = ({ simplified }) => {
 
   if (isLoading) return <Loader />;
   console.log(cryptos);
+  // console.log(cryptoList?.data?.coins.id)
 
   const searchChangeHandler = (e) => {
     setSearchTerm(e.target.value);
@@ -47,7 +48,7 @@ const Cryptocurrencies = ({ simplified }) => {
             className={`crypto-card`}
             key={currency.id}
           >
-            <Link to={`/crypto/${currency.id}`}>
+            <Link to={`/crypto/${currency.uuid}`}>
               <Card
                 style={{ backgroundColor: currency.color }}
                 className="text-white"
